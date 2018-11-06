@@ -1,0 +1,21 @@
+<nav class="navbar navbar-default headerpont header">
+    <div class="container">
+      <div class= "navbar-header">
+        <a routerLink="/list" class="navbar-brand">To Do</a>
+      </div>
+      <div class="navbar-default">
+        <ul class= "nav navbar-nav">
+          <li routerLinkActive="active"><a routerLink = "/list"> To Do List</a></li>
+          <li routerLinkActive="active"><a routerLink="/statistics"> To Do Statistics</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <ng-template [ngIf] = "!authService.isAuthenticated()">
+              <li routerLinkActive="active"><a routerLink = "/signup"> Signup</a></li>
+              <li routerLinkActive="active"><a routerLink = "/signin"> Login</a></li>
+          </ng-template> 
+          <li><a style= "cursor:pointer;" (click)="onLogout()" *ngIf = "authService.isAuthenticated()">Logout</a></li>
+        </ul>
+      </div> 
+    </div>
+</nav>
+  

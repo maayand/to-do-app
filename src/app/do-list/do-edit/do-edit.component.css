@@ -1,0 +1,31 @@
+input.ng-invalid.ng-touched{
+    border: 1px solid #0aa0a0
+}
+
+.help-block{
+    color:black;
+    font-family: "Reenie Beanie",arial,sans-serif;
+}
+
+label, input, button{
+    font-family: "Reenie Beanie",arial,sans-serif;
+    font-size: 1.2em;
+}
+.addform{
+    margin-top: -15px;
+}
+.x{
+    float: right;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 2px;
+    color:white;
+    background-color: black;
+    border: 3px black solid;
+    border-radius: 50%;    
+}
+
+button{
+    height: 40px;
+    margin-right: 4px;
+}
